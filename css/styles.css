@@ -12,12 +12,43 @@ body {
   background-color: var(--white-color);
 }
 
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*--------------- HEADER ------------------*/
 
 .header {
+  border-bottom: 1px solid violet;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-logo {
+  margin-right: 76px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .link {
@@ -26,6 +57,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .logo-web {
@@ -68,6 +101,11 @@ body {
   color: var(--slate-color);
 }
 
+.header-adress-list {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
+}
 /*--------------- HERO ------------------*/
 
 .hero {
@@ -75,6 +113,8 @@ body {
 
 .hero-section {
   background-color: var(--navy-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-text {
@@ -84,6 +124,9 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  display: block;
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .hero-btn {
@@ -95,6 +138,12 @@ body {
   color: var(--white-color);
   background-color: var(--iris-color);
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:hover,
@@ -104,6 +153,18 @@ body {
 /*--------------- WORKS ------------------*/
 
 .works {
+  padding: 120px 0;
+}
+
+.container-works {
+}
+
+.works-list {
+  display: flex;
+  gap: 24px;
+}
+.works-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .text-title {
@@ -112,6 +173,10 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-color);
+}
+
+.works-text-title {
+  margin-bottom: 8px;
 }
 
 .specific-text {
@@ -123,6 +188,7 @@ body {
 
 /*--------------- SERVICES ------------------*/
 .servisec {
+  padding-bottom: 120px;
 }
 
 .servisec-titel {
@@ -135,11 +201,17 @@ body {
   color: var(--navy-color);
 }
 
+.servisec-list {
+  display: flex;
+  gap: 24px;
+}
+
 /*--------------- TEAM ------------------*/
 
 .team {
   color: var(--navy-color);
   background-color: var(--cloud-color);
+  padding: 120px 0;
 }
 .team-title {
   font-weight: 700;
@@ -148,12 +220,19 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: var(--white-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 .team-text-title {
   font-weight: 500;
@@ -161,6 +240,11 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.team-title-container {
+  margin-bottom: 72px;
 }
 .team-text {
   font-size: 16px;
@@ -170,9 +254,13 @@ body {
   color: var(--slate-color);
 }
 
+.team-person {
+  padding: 32px 16px;
+}
 /*--------------- PORTFOLIO ------------------*/
 
 .high-options {
+  padding: 96px 0 120px;
 }
 .options-btn {
   font-family: 'Roboto', sans-serif;
@@ -184,6 +272,9 @@ body {
   color: var(--iris-color);
   background-color: var(--cloud-color);
   cursor: pointer;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px;
 }
 
 .options-btn:hover,
@@ -192,13 +283,38 @@ body {
   background-color: #404bbf;
 }
 
+.options-btn-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
 .options-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.options-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+}
+
+.options-text-title {
+  margin-bottom: 8px;
 }
 /*--------------- FOOTER ------------------*/
 
 .footer {
   background-color: var(--navy-color);
   color: var(--cloud-color);
+  padding: 100px 0;
 }
 
 .logo-web-down {
@@ -213,10 +329,13 @@ body {
 
 .logo-studio-down {
   color: var(--cloud-color);
+  margin-bottom: 16px;
 }
 
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  max-width: 264px;
 }
