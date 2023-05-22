@@ -311,10 +311,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
+  border-top: none;
 }
 
 .options-item {
-  border-top: none;
   width: calc((100% - 2 * 24px) / 3);
 }
 
