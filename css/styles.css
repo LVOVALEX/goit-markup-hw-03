@@ -111,15 +111,6 @@ img {
 
 .hero {
 }
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
 
 .hero-section {
   background-color: var(--navy-color);
@@ -323,11 +314,11 @@ img {
 }
 
 .options-item {
+  border-top: none;
   width: calc((100% - 2 * 24px) / 3);
 }
 
 .options-text {
-  border-top: none;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
 }
