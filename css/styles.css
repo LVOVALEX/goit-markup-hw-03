@@ -277,6 +277,11 @@ img {
 .high-options {
   padding: 96px 0 120px;
 }
+
+.options-container {
+  border-top: none;
+}
+
 .options-btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -311,7 +316,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  border-top: none;
 }
 
 .options-item {
