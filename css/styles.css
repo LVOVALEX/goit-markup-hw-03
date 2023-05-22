@@ -27,21 +27,21 @@ img {
 /*--------------- HEADER ------------------*/
 
 .header {
-  border-bottom: 1px solid violet;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
+  padding: 24px 0;
 }
+
 .navigation {
   display: flex;
   align-items: center;
 }
 
 .header-item {
-  padding: 24px 0;
 }
 
 .header-list {
@@ -197,6 +197,15 @@ img {
   color: var(--slate-color);
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 /*--------------- SERVICES ------------------*/
 .servisec {
   padding-bottom: 120px;
