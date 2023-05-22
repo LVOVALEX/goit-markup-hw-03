@@ -24,6 +24,15 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 /*--------------- HEADER ------------------*/
 
 .header {
@@ -88,11 +97,12 @@ img {
   letter-spacing: 0.02em;
   color: var(--navy-color);
   padding: 24px 0;
+  display: block;
 }
 
 .adress-list {
   font-style: normal;
-  margin: 0 auto;
+  margin-left: auto;
 }
 
 .heder-adress {
